@@ -23,12 +23,14 @@
             rustToolchain
             rust-analyzer
             pkg-config
+            podman
           ];
 
           MSG = "Welcome to Dev Environment !!";
           shellHook = ''
             echo $MSG
             cargo --version
+            podman --version
           '';
         };
       });
